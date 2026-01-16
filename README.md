@@ -3,7 +3,7 @@ These two simple nodes for InvokeAI let you easily swap the width and height val
 
 
 ## Swap Dimensions Node for InvokeAI
-## Allows swapping width and height values with a toggle
+Allows swapping width and height values with a toggle
 
 ---
 
