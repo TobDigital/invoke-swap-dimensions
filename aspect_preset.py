@@ -30,10 +30,11 @@ class AspectPresetInvocation(BaseInvocation):
     
     preset: Literal[
         "1:1 Square",
+        "3:4 Portrait",
         "4:5 Portrait",
         "2:3 Portrait",
-        "9:16 Vertical",
-        "16:9 Landscape",
+        "9:16 Smartphone",
+        "16:9 Widescreen",
         "3:2 Landscape",
         "21:9 Cinematic"
     ] = InputField(
@@ -47,10 +48,11 @@ class AspectPresetInvocation(BaseInvocation):
         # Mapping of presets to dimensions (width, height)
         dimensions_map = {
             "1:1 Square": (1024, 1024),
+            "3:4 Portrait": (888, 1184),
             "4:5 Portrait": (896, 1120),
             "2:3 Portrait": (832, 1248),
-            "9:16 Vertical": (768, 1360),
-            "16:9 Landscape": (1360, 768),
+            "9:16 Smartphone": (768, 1360),
+            "16:9 Widescreen": (1360, 768),
             "3:2 Landscape": (1248, 832),
             "21:9 Cinematic": (1536, 656),
         }
